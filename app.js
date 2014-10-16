@@ -105,6 +105,7 @@ app.post('/payments/confirm', function(req, res) {
 ///////////////////////////////
 
 // Fire up the server
-var server = app.listen(3000, function() {
-  console.log("PAYBOOTH started and listening on port 3000");
+var port = Number(process.env.PORT || 3000);
+var server = app.listen(port, function() {
+  console.log("PAYBOOTH started and listening on port " + port);
 });
