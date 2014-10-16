@@ -1,0 +1,19 @@
+Settings:
+  price: 500
+  currency: 'EUR'
+
+Paymill:
+  secret_key: ''
+  public_key: ''
+
+Twitter:
+  consumer_key: ''
+  consumer_secret: ''
+  token: ''
+  token_secret: ''
+
+Cloudinary:
+  cloud_name: ''
+  preset: ''
+  api_key: ''
+  api_secret: ''

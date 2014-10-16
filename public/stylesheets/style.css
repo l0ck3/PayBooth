@@ -1,0 +1,60 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.pay-button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px 10px;
+  background: #f05000;
+  color: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.pay-button:hover {
+  background: #d03000;
+}
+
+.brand {
+  background: url("/images/logo.png") no-repeat center;
+  height: 47px;
+  margin-bottom: 20px;
+  text-indent: -10000px;
+}
+
+.preview {
+  display: none;
+}
+
+#canvas {
+  display: none;
+}
+
+/*#video {
+  display: none;
+}*/
+
+#cam-zone {
+  text-align: center;
+}
+
+.payment {
+  float: left;
+}
+
+.payment-errors {
+  color: red;
+  padding: 20px 0;
+}
+

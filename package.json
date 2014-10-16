@@ -1,0 +1,18 @@
+{
+  "name": "PayBooth",
+  "description": "PAYMILL API Demo",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "config": "*",
+    "dotenv": "0.4.0",
+    "express": "4.x",
+    "ect": "*",
+    "request": "*",
+    "body-parser": "~1.8.1",
+    "paymill-wrapper": "*",
+    "jade": "~1.6.0",
+    "js-yaml": "*",
+    "cloudinary": "*"
+  }
+}

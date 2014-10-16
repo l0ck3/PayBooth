@@ -1,0 +1,33 @@
+extends layout
+
+block content
+
+  #cam-zone.container
+    img.preview(src="http://placehold.it/640x480" id="photo" alt="photo")
+    // video(id="video")
+    // canvas(id="canvas")
+
+  form(action="javascript:void(0);" method="post")
+      script(
+        src="https://button.paymill.com/v1/"
+        id="button"
+        data-label="Take Picture"
+        data-title="PAY NOW!"
+        data-description="#{amount / 100}€ Only for your amazing photo!"
+        data-submit-button="Confirm Payment"
+        data-amount="#{amount}"
+        data-currency="#{currency}"
+        data-public-key="#{paymillPublicKey}"
+        data-inline="true"
+      )
+
+block javascripts
+  script(type="text/javascript" src="https://bridge.paymill.com/")
+  script(type="text/javascript" src="/javascripts/camera.js")
+  script(
+    type="text/javascript"
+    src="/javascripts/paybooth.js"
+    id="paybooth"
+    data-preset="#{cloudinaryPreset}"
+    data-cloudname="#{cloudinaryCloudname}"
+  )
